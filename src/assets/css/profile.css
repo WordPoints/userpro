@@ -1,0 +1,10 @@
+div.wordpoints-userpro-user-points {
+	margin-top: 10px;
+}
+
+.userpro-profile-img-after .wordpoints-userpro-user-points span {
+	color: #fff;
+	background-color: #75737380;
+	padding: 3px;
+	border-radius: 3px;
+}
