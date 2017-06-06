@@ -52,4 +52,25 @@ function wordpoints_userpro_display_points( $user_id ) {
 	echo '</div>';
 }
 
+/**
+ * Filters a username to wrap it in a link to the user's profile.
+ *
+ * @since 1.1.0
+ *
+ * @param string      $username The username.
+ * @param int|WP_User $user_id  The user's ID or user object.
+ *
+ * @return string The filtered username.
+ */
+function wordpoints_userpro_profile_link_filter( $username, $user_id ) {
+
+	global $userpro;
+
+	if ( $user_id instanceof WP_User ) {
+		$user_id = $user_id->ID;
+	}
+
+	return '<a href="'. esc_url( $userpro->permalink( $user_id ) ) . '">' . $username . '</a>';
+}
+
 // EOF
