@@ -8,6 +8,7 @@
  */
 
 if ( wordpoints_component_is_active( 'points' ) ) {
+	add_action( 'init', 'wordpoints_userpro_register_scripts' );
 	add_action( 'userpro_after_name_user_list', 'wordpoints_userpro_display_points' );
 	add_action( 'userpro_after_profile_img', 'wordpoints_userpro_display_points' );
 }
