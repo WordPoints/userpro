@@ -7,7 +7,7 @@
  * @since   1.0.0
  */
 
-if ( wordpoints_component_is_active( 'points' ) ) {
+if ( wordpoints_component_is_active( 'points' ) && function_exists( 'userpro_init' ) ) {
 
 	add_action( 'init', 'wordpoints_userpro_register_scripts' );
 
