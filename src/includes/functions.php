@@ -84,6 +84,10 @@ function wordpoints_userpro_profile_link_filter( $username, $user_id ) {
  */
 function wordpoints_userpro_display_points_logs( $args ) {
 
+	if ( ! isset( $args['template'] ) || $args['template'] !== 'view' ) {
+		return;
+	}
+
 	if ( empty( $args['user_id'] ) ) {
 		return;
 	}
