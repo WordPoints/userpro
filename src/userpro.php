@@ -49,13 +49,13 @@ WordPoints_Modules::register(
  *
  * @since 1.0.0
  */
-require_once( dirname( __FILE__ ) . '/includes/functions.php' );
+require_once dirname( __FILE__ ) . '/includes/functions.php';
 
 /**
  * Hooks up the module's actions and filters.
  *
  * @since 1.0.0
  */
-require_once( dirname( __FILE__ ) . '/includes/actions.php' );
+require_once dirname( __FILE__ ) . '/includes/actions.php';
 
 // EOF

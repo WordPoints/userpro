@@ -72,7 +72,7 @@ function wordpoints_userpro_profile_link_filter( $username, $user_id ) {
 		$user_id = $user_id->ID;
 	}
 
-	return '<a href="'. esc_url( $userpro->permalink( $user_id ) ) . '">' . $username . '</a>';
+	return '<a href="' . esc_url( $userpro->permalink( $user_id ) ) . '">' . $username . '</a>';
 }
 
 /**
@@ -86,7 +86,7 @@ function wordpoints_userpro_profile_link_filter( $username, $user_id ) {
  */
 function wordpoints_userpro_display_points_logs( $args ) {
 
-	if ( ! isset( $args['template'] ) || $args['template'] !== 'view' ) {
+	if ( ! isset( $args['template'] ) || 'view' !== $args['template'] ) {
 		return;
 	}
 
