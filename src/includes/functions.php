@@ -14,9 +14,11 @@
  */
 function wordpoints_userpro_register_scripts() {
 
+	$suffix = SCRIPT_DEBUG ? '' : '.min';
+
 	wp_register_style(
 		'wordpoints-userpro-profile'
-		, wordpoints_modules_url( '/assets/css/profile.css', dirname( __FILE__ ) )
+		, wordpoints_modules_url( "/assets/css/profile{$suffix}.css", dirname( __FILE__ ) )
 	);
 }
 

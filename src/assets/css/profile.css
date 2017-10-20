@@ -6,5 +6,6 @@ div.wordpoints-userpro-user-points {
 	color: #fff;
 	background-color: #75737380;
 	padding: 3px;
+	-webkit-border-radius: 3px;
 	border-radius: 3px;
 }
