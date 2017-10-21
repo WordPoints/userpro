@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Main file of the module.
+ * Main file of the extension.
  *
  * ---------------------------------------------------------------------------------|
  * Copyright 2017  J.D. Grimes  (email : jdg@codesymphony.co)
@@ -21,41 +21,41 @@
  * ---------------------------------------------------------------------------------|
  *
  * @package WordPoints_UserPro
- * @version 1.1.2
+ * @version 1.1.3
  * @author  J.D. Grimes <jdg@codesymphony.co>
  * @license GPLv2+
  */
 
-WordPoints_Modules::register(
+wordpoints_register_extension(
 	'
-		Module Name: UserPro
-		Author:      J.D. Grimes
-		Author URI:  https://wordpoints.org/
-		Module URI:  https://wordpoints.org/modules/userpro/
-		Version:     1.1.2
-		License:     GPLv2+
-		Description: Integrates with the UserPro plugin.
-		Text Domain: wordpoints-userpro
-		Domain Path: /languages
-		Server:      wordpoints.org
-		ID:          1153
-		Namespace:   UserPro
+		Extension Name: UserPro
+		Author:         J.D. Grimes
+		Author URI:     https://wordpoints.org/
+		Extension URI:  https://wordpoints.org/extensions/userpro/
+		Version:        1.1.3
+		License:        GPLv2+
+		Description:    Integrates with the UserPro plugin.
+		Text Domain:    wordpoints-userpro
+		Domain Path:    /languages
+		Server:         wordpoints.org
+		ID:             1153
+		Namespace:      UserPro
 	'
 	, __FILE__
 );
 
 /**
- * The module's main functions.
+ * The extension's main functions.
  *
  * @since 1.0.0
  */
-require_once( dirname( __FILE__ ) . '/includes/functions.php' );
+require_once dirname( __FILE__ ) . '/includes/functions.php';
 
 /**
- * Hooks up the module's actions and filters.
+ * Hooks up the extension's actions and filters.
  *
  * @since 1.0.0
  */
-require_once( dirname( __FILE__ ) . '/includes/actions.php' );
+require_once dirname( __FILE__ ) . '/includes/actions.php';
 
 // EOF

@@ -1,0 +1,13 @@
+{
+    "\/includes\/functions.php": {
+        ":": {
+            "45": {
+                "name": "esc_html",
+                "type": "unknown",
+                "args_started": true,
+                "arg_count": 0,
+                "parentheses": 1
+            }
+        }
+    }
+}

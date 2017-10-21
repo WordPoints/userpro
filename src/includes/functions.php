@@ -1,22 +1,24 @@
 <?php
 
 /**
- * The module's main functions.
+ * The extension's main functions.
  *
  * @package WordPoints_UserPro
  * @since   1.0.0
  */
 
 /**
- * Registers the module's scripts and styles.
+ * Registers the extension's scripts and styles.
  *
  * @since 1.1.0
  */
 function wordpoints_userpro_register_scripts() {
 
+	$suffix = SCRIPT_DEBUG ? '' : '.min';
+
 	wp_register_style(
 		'wordpoints-userpro-profile'
-		, wordpoints_modules_url( '/assets/css/profile.css', dirname( __FILE__ ) )
+		, wordpoints_extensions_url( "/assets/css/profile{$suffix}.css", dirname( __FILE__ ) )
 	);
 }
 
@@ -70,7 +72,7 @@ function wordpoints_userpro_profile_link_filter( $username, $user_id ) {
 		$user_id = $user_id->ID;
 	}
 
-	return '<a href="'. esc_url( $userpro->permalink( $user_id ) ) . '">' . $username . '</a>';
+	return '<a href="' . esc_url( $userpro->permalink( $user_id ) ) . '">' . $username . '</a>';
 }
 
 /**
@@ -84,7 +86,7 @@ function wordpoints_userpro_profile_link_filter( $username, $user_id ) {
  */
 function wordpoints_userpro_display_points_logs( $args ) {
 
-	if ( ! isset( $args['template'] ) || $args['template'] !== 'view' ) {
+	if ( ! isset( $args['template'] ) || 'view' !== $args['template'] ) {
 		return;
 	}
 
