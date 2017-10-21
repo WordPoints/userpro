@@ -26,20 +26,20 @@
  * @license GPLv2+
  */
 
-WordPoints_Modules::register(
+wordpoints_register_extension(
 	'
-		Module Name: UserPro
-		Author:      J.D. Grimes
-		Author URI:  https://wordpoints.org/
-		Module URI:  https://wordpoints.org/modules/userpro/
-		Version:     1.1.2
-		License:     GPLv2+
-		Description: Integrates with the UserPro plugin.
-		Text Domain: wordpoints-userpro
-		Domain Path: /languages
-		Server:      wordpoints.org
-		ID:          1153
-		Namespace:   UserPro
+		Extension Name: UserPro
+		Author:         J.D. Grimes
+		Author URI:     https://wordpoints.org/
+		Extension URI:  https://wordpoints.org/extensions/userpro/
+		Version:        1.1.2
+		License:        GPLv2+
+		Description:    Integrates with the UserPro plugin.
+		Text Domain:    wordpoints-userpro
+		Domain Path:    /languages
+		Server:         wordpoints.org
+		ID:             1153
+		Namespace:      UserPro
 	'
 	, __FILE__
 );
