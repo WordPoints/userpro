@@ -1,14 +1,14 @@
 <?php
 
 /**
- * The module's main functions.
+ * The extension's main functions.
  *
  * @package WordPoints_UserPro
  * @since   1.0.0
  */
 
 /**
- * Registers the module's scripts and styles.
+ * Registers the extension's scripts and styles.
  *
  * @since 1.1.0
  */
@@ -18,7 +18,7 @@ function wordpoints_userpro_register_scripts() {
 
 	wp_register_style(
 		'wordpoints-userpro-profile'
-		, wordpoints_modules_url( "/assets/css/profile{$suffix}.css", dirname( __FILE__ ) )
+		, wordpoints_extensions_url( "/assets/css/profile{$suffix}.css", dirname( __FILE__ ) )
 	);
 }
 

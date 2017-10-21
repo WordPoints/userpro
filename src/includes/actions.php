@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Hooks up actions and filters for the module.
+ * Hooks up actions and filters for the extension.
  *
  * @package WordPoints_UserPro
  * @since   1.0.0
