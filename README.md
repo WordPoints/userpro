@@ -1,4 +1,4 @@
-# UserPro [![HackerOne Bug Bounty Program](https://img.shields.io/badge/security-HackerOne-blue.svg)](https://hackerone.com/wordpoints)
+# UserPro [![Build Status](https://travis-ci.org/WordPoints/userpro.svg?branch=develop)](https://travis-ci.org/WordPoints/userpro) [![HackerOne Bug Bounty Program](https://img.shields.io/badge/security-HackerOne-blue.svg)](https://hackerone.com/wordpoints)
 
 Hello! This is where we develop the premium UserPro integration extension that you 
 can [purchase on WordPoints.org](https://wordpoints.org/extensions/userpro/). 
