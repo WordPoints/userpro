@@ -21,7 +21,7 @@
  * ---------------------------------------------------------------------------------|
  *
  * @package WordPoints_UserPro
- * @version 1.1.2
+ * @version 1.1.3
  * @author  J.D. Grimes <jdg@codesymphony.co>
  * @license GPLv2+
  */
@@ -32,7 +32,7 @@ wordpoints_register_extension(
 		Author:         J.D. Grimes
 		Author URI:     https://wordpoints.org/
 		Extension URI:  https://wordpoints.org/extensions/userpro/
-		Version:        1.1.2
+		Version:        1.1.3
 		License:        GPLv2+
 		Description:    Integrates with the UserPro plugin.
 		Text Domain:    wordpoints-userpro
